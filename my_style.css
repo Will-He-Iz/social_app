@@ -1,7 +1,7 @@
 /* Typeography, Buttons, Links
 ================================*/
 * {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -17,10 +17,12 @@
   margin-top: 0;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
 }
 
 ul {
-  float: right;
+  text-align: center;
   list-style: none;
   padding-right: 20px;
 }
@@ -31,16 +33,68 @@ li {
   padding-right: 10px;
 }
 
+ul li a {
+  color: white;
+  text-decoration: none;
+}
 
+ul li a:hover {
+  color: skyblue;
+}
 
 
 /* Body
 ================================*/
-
 
 .wrapper {
   padding-top: 100px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+
+
+
+
+/* Media Queries
+================================*/
+
+@media (min-width: 480px) {
+
+  /* Navigation
+  ================================*/
+
+  .nav {
+    clear: both; /*Streches this parent element around both the left and right floats*/
+    background-color: #3c3c3c;
+    height: 60px;
+    width: 100%;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  ul {
+    float: right;
+    list-style: none;
+    padding-right: 20px;
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+  }
+
+  ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  ul li a:hover {
+    color: skyblue;
+  }
 }
