@@ -1,5 +1,6 @@
 /* Body
 ================================*/
 .wrapper {
+  display: inline-block;
   margin: auto;
 }
